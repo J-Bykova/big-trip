@@ -1,10 +1,11 @@
 {
   "name": "big-trip",
-  "version": "16.0.0",
+  "version": "1.0.0",
   "private": true,
   "scripts": {
     "eslint": "eslint src/",
-    "test": "npm run eslint"
+    "test": "npm run eslint",
+    "build": "webpack --mode development"
   },
   "devDependencies": {
     "eslint": "7.32.0",
