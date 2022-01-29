@@ -3,6 +3,7 @@ import {createNavigationTemplate} from './view/navigation-view.js';
 import {createFiltersOfTripTemplate} from './view/filters-of-trip-view.js';
 import {createNewTripTemplate} from "./view/new-trip-view";
 import {createSortingOfTripsEventsTemplate} from "./view/sorting-of-trip-events-view";
+import {createListOfTripTemplate} from "./view/list-of-trip-view";
 
 const header = document.querySelector('.page-header');
 const navigation = header.querySelector('.trip-controls__navigation');
@@ -13,4 +14,5 @@ const events = main.querySelector('.trip-events');
 renderTemplate(navigation, createNavigationTemplate(), RenderPosition.BEFOREEND);
 renderTemplate(filters, createFiltersOfTripTemplate(), RenderPosition.BEFOREEND);
 renderTemplate(events, createSortingOfTripsEventsTemplate(), RenderPosition.BEFOREEND);
-renderTemplate(events, createNewTripTemplate(), RenderPosition.BEFOREEND);
+// renderTemplate(events, createNewTripTemplate(), RenderPosition.BEFOREEND);
+renderTemplate(events, createListOfTripTemplate(), RenderPosition.BEFOREEND);
