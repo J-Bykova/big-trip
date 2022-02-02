@@ -1,11 +1,11 @@
-import {ActivityOption} from "./ActivityOption";
+import {AdditionalOption} from "./AdditionalOption";
 
 export class ActivityType {
   private readonly name: string;
   private readonly icon: string;
-  private readonly activityOption: ActivityOption[];
+  private readonly activityOption: AdditionalOption[];
 
-  constructor(name: string, icon: string, activityOption: ActivityOption[]) {
+  constructor(name: string, icon: string, activityOption: AdditionalOption[]) {
     this.name = name;
     this.icon = icon;
     this.activityOption = activityOption;

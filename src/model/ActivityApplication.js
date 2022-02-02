@@ -1,0 +1,4 @@
+class ActivityApplication {
+  constructor() {
+  }
+}

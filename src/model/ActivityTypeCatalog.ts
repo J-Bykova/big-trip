@@ -7,6 +7,10 @@ class ActivityTypeCatalog {
     this.activityTypes = activityTypes;
   }
 
+  getDefaultType() {
+    return this.activityTypes[0];
+  }
+
   getAvailable() {
     return this.activityTypes;
   }

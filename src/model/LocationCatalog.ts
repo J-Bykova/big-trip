@@ -7,6 +7,10 @@ export class LocationCatalog {
     this.locations = location;
   }
 
+  getDefaultLocation() {
+    return this.locations[0];
+  }
+
   getAvailableLocation() {
     return this.locations;
   }
